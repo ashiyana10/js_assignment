@@ -7,7 +7,7 @@ function addition() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2 =='')
 		{
-			throw('Enter value');
+			throw('Enter both value');
 		}
 		else{
 			/*number1 and number2 datatype is string so + operator perform concatenation.. 
@@ -32,7 +32,7 @@ function subtraction() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2 =='')
 		{
-			throw('Enter value');
+			throw('Enter both value');
 		}
 		else{
 			let ans=number1-number2;
@@ -54,7 +54,7 @@ function multiplication() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2 =='')
 		{
-			throw('Enter value');
+			throw('Enter both value');
 		}
 		else{
 			let ans=number1*number2;
@@ -76,12 +76,12 @@ function division() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2=='')
 		{
-			throw("Enter value");
+			throw("Enter both value");
 		}
 		else {
 			//first check user enter both value then check divide by zero
 				if(number2==0){
-					throw("divide by zero");
+					throw("cannot divide by zero");
 				}
 				else{
 					let ans=number1/number2;
