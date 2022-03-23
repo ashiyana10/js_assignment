@@ -100,7 +100,7 @@ function division() {
 //this is for the modulo operation
 function modulo() {
 	
-let number1=document.getElementById("number1").value;
+	let number1=document.getElementById("number1").value;
 	let number2=document.getElementById("number2").value;
 	try{
 		//here check user mandatory to enter both values 
