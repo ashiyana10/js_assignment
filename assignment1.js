@@ -7,7 +7,7 @@ function addition() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2 =='')
 		{
-			throw('Enter both value');
+			throw('Enter value');
 		}
 		else{
 			/*number1 and number2 datatype is string so + operator perform concatenation.. 
@@ -32,7 +32,7 @@ function subtraction() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2 =='')
 		{
-			throw('Enter both value');
+			throw('Enter value');
 		}
 		else{
 			let ans=number1-number2;
@@ -54,7 +54,7 @@ function multiplication() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2 =='')
 		{
-			throw('Enter both value');
+			throw('Enter value');
 		}
 		else{
 			let ans=number1*number2;
@@ -76,15 +76,45 @@ function division() {
 		//here check user mandatory to enter both values 
 		if(number1=='' || number2=='')
 		{
-			throw("Enter both value");
+			throw("Enter value");
 		}
 		else {
 			//first check user enter both value then check divide by zero
 				if(number2==0){
-					throw("cannot divide by zero");
+					throw("divide by zero");
 				}
 				else{
 					let ans=number1/number2;
+					document.getElementById('answer').innerHTML=ans;
+				}
+			}
+	}
+
+	
+	catch(e)
+	{
+		alert("Error : " +e);
+	}
+		
+}
+//this is for the modulo operation
+function modulo() {
+	
+let number1=document.getElementById("number1").value;
+	let number2=document.getElementById("number2").value;
+	try{
+		//here check user mandatory to enter both values 
+		if(number1=='' || number2=='')
+		{
+			throw("Enter value");
+		}
+		else {
+			//first check user enter both value then check divide by zero
+				if(number2==0){
+					throw("divide by zero");
+				}
+				else{
+					let ans=number1%number2;
 					document.getElementById('answer').innerHTML=ans;
 				}
 			}
