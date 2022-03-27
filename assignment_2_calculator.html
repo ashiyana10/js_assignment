@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Assignment 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="assignment2.js"></script>
+</head>
+<body>
+<form>
+		<!-- this for enter 1st number-->
+		<p><label>Enter 1st value : </label>
+		<input type="text"  id="number1"></p>
+		<!-- this for enter 2nd number-->
+		<p><label>Enter 2nd value : </label>
+		<input type="text"  id="number2"></p>
+		<!--this for addition operation-->
+		<input type="button"  onclick="addition()" value="Addition">
+		<!--this for subtraction operation-->
+		<input type="button"  onclick="subtraction()" value="Subtraction">
+		<!--this for multiplication operation-->
+		<input type="button"  onclick="multiplication()" value="Multiplication">
+		<!--this for division operation-->
+		<input type="button"  onclick="division()" value="Division">
+		<!--this for modulo operation-->
+		<input type="button"  onclick="modulo()" value="Modulo">
+</form>
+		<!--display the answer-->
+		<p>Answer is :
+			<span id = "answer"></span>
+		</p>
+		<!-- display error message-->
+		<p>
+			<span id="errormsg"></span>
+		</p>
+</body>
+</html>
