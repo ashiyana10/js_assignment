@@ -13,14 +13,14 @@ function addition() {
 		}
 		else{
 				//Convert string datatype to integer datatype
-				number1 = parseInt(number1);
-				number2 = parseInt(number2);
+				let num1 = parseInt(number1);
+				let num2 = parseInt(number2);
 
 				//Check enter values integer or not
-				if(Number.isInteger(number1)  &&  Number.isInteger(number2)){
+				if(Number.isInteger(num1)  &&  Number.isInteger(num2)){
 				
-					/*Here let have block level scope that means it only accesible in inner if statement part*/
-					let ans = `${number1 + number2}`;//here use template literal
+					/*Here const have block level scope that means it only accesible in inner if statement part*/
+					const ans = `${num1 + num2}`;//here use template literal
 					document.getElementById('answer').innerHTML = ans;//display answer
 					document.getElementById('errormsg').innerHTML = '';//clear the previous any error msg	
 					}
@@ -57,14 +57,14 @@ function subtraction() {
 		}
 		else{
 				//Convert string datatype to integer datatype
-				number1 = parseInt(number1);
-				number2 = parseInt(number2);
+				let num1 = parseInt(number1);
+				let num2 = parseInt(number2);
 
 				//Check enter values integer or not
-				if(Number.isInteger(number1)  &&  Number.isInteger(number2)){
+				if(Number.isInteger(num1)  &&  Number.isInteger(num2)){
 				
-					/*Here let have block level scope that means it only accesible in inner if statement part*/
-					let ans = `${number1 - number2}`;//here use template literal
+					/*Here const have block level scope that means it only accesible in inner if statement part*/
+					const ans = `${num1 - num2}`;//here use template literal
 					document.getElementById('answer').innerHTML = ans;//display answer
 					document.getElementById('errormsg').innerHTML = '';//clear the previous any error msg	
 					}
@@ -100,14 +100,14 @@ function multiplication() {
 		}
 		else{
 				//Convert string datatype to integer datatype
-				number1 = parseInt(number1);
-				number2 = parseInt(number2);
+				let num1 = parseInt(number1);
+				let num2 = parseInt(number2);
 
 				//Check enter values integer or not
-				if(Number.isInteger(number1)  &&  Number.isInteger(number2)){
+				if(Number.isInteger(num1)  &&  Number.isInteger(num2)){
 				
-					/*Here let have block level scope that means it only accesible in inner if statement part*/
-					let ans = `${number1 * number2}`;//here use template literal
+					/*Here const have block level scope that means it only accesible in inner if statement part*/
+					const ans = `${num1 * num2}`;//here use template literal
 					document.getElementById('answer').innerHTML = ans;//display answer
 					document.getElementById('errormsg').innerHTML = '';//clear the previous any error msg	
 					}
@@ -144,21 +144,21 @@ function division() {
 		}
 		else{
 				//Convert string datatype to integer datatype
-				number1 = parseInt(number1);
-				number2 = parseInt(number2);
+				let num1 = parseInt(number1);
+				let num2 = parseInt(number2);
 
 				//Check enter values integer or not
-				if(Number.isInteger(number1)  &&  Number.isInteger(number2))
+				if(Number.isInteger(num1)  &&  Number.isInteger(num2))
 				{
 					// check divide by zero
-					if(number2==0)
+					if(num2==0)
 					{
 						throw("Can not be divide by zero");
 
 					}
 					else{
-							/*Here let have block level scope that means it only accesible in inner if statement part*/
-							let ans = `${number1 / number2}`;//here use template literal
+							/*Here const have block level scope that means it only accesible in inner if statement part*/
+							const ans = `${num1 / num2}`;//here use template literal
 							document.getElementById('answer').innerHTML = ans;//display answer
 							document.getElementById('errormsg').innerHTML = '';//clear the previous any error msg	
 						}
@@ -196,21 +196,21 @@ function modulo() {
 		}
 		else{
 				//Convert string datatype to integer datatype
-				number1 = parseInt(number1);
-				number2 = parseInt(number2);
+				let num1 = parseInt(number1);
+				let num2 = parseInt(number2);
 
 				//Check enter values integer or not
-				if(Number.isInteger(number1)  &&  Number.isInteger(number2))
+				if(Number.isInteger(num1)  &&  Number.isInteger(num2))
 				{
 					//check divide by zero 	
-					if(number2==0)
+					if(num2==0)
 					{
 						throw("Can not be divide by zero");
 
 					}
 					else{
-							/*Here let have block level scope that means it only accesible in inner if statement part*/
-							let ans = `${number1 % number2}`;//here use template literal
+							/*Here const have block level scope that means it only accesible in inner if statement part*/
+							const ans = `${num1 % num2}`;//here use template literal
 							document.getElementById('answer').innerHTML = ans;//display answer
 							document.getElementById('errormsg').innerHTML = '';//clear the previous any error msg	
 						}
