@@ -52,6 +52,7 @@ function editdata(td)
 	//set the value of selectrow for perform updation
 	selectrow=td.parentElement.parentElement;
 	
+	//it take data from the table cell and put into the update form
 	document.getElementById('Name').value=selectrow.cells[0].innerHTML;
 	document.getElementById('Address').value=selectrow.cells[1].innerHTML;
 	document.getElementById('E_id').value=selectrow.cells[2].innerHTML;
@@ -61,6 +62,7 @@ function editdata(td)
 //update the records
 function updatedata(formdata)
 {
+	//read the data from the html form and insert into table
 	selectrow.cells[0].innerHTML=formdata.next().value;
 	selectrow.cells[1].innerHTML=formdata.next().value;
 	selectrow.cells[2].innerHTML=formdata.next().value;
