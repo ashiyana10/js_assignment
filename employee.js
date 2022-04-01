@@ -1,5 +1,6 @@
 let selectrow=null;
 
+//if user click on add detail button then execute onformsubmit function
 function onformsubmit() {
 	//readformdata class read the data from the form
 	//create object of readformdata class
@@ -12,7 +13,7 @@ function onformsubmit() {
 			
 			const data=myiterator(read);
 
-			//get the value for display record in table
+			//get the value for display record in which  table
 			var table=document.getElementById('Employee_list').getElementsByTagName('tbody')[0];
 
 			//insert new row in table
@@ -39,6 +40,8 @@ function onformsubmit() {
 
 		updatedata(data);
 	}	
+	
+	//after insertion and updation clear the textbox value
 	resetform();	
 	
 }
